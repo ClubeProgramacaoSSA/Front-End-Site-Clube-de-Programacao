@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&family=Roboto:wght@400;500&display=swap');
+
+:root {
+
+        /* Fontes para os textos do site */
+        --texto-principal: 'Roboto', sans-serif; 
+        --texto-menor: 'Manrope', sans-serif;
+
+        /*Paleta de cores*/
+        --cor-laranja: #FB9304;
+        --cor-preta: #080808;   /*Usada no fundo*/
+        --cor-branca: white;
+        --cor-roxa: #AD00FF;
+
+        /*Gradeinte da página de Torneios:*/
+        --grad-bg: linear-gradient(to right bottom, #3d004e, #420354, #48065b, #4d0b61, #530f68, #670866, #7a0263, #8a005f, #a1004d, #b01c39, #b63922, #b35400);
+       
+}
+ 
  * {
   padding: 0;
   margin: 0;
@@ -6,12 +25,12 @@
  }
 
  html, body, #root {
-  background-color: #ffffff;
+  background: var(--cor-preta);
   height: 100%;
  }
 
  .navbar {
     display: flex;
     justify-content: space-between;
-
  }
+ 

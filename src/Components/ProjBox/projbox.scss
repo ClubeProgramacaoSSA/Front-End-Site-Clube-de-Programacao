@@ -1,0 +1,114 @@
+@import 'bootstrap/scss/bootstrap';
+
+.container {
+
+        padding: 5%;
+        .projeto {
+                max-height: 900px;
+                .photo {
+                        height: 100%;
+                        width: auto;
+
+                }
+                .text { 
+                        margin-top: 10%;
+                        margin-left: 1%;
+                        color: var(--cor-branca);
+
+                        h1 {
+                                font-family: var(--texto-menor);
+                                font-weight: 700;
+                        }
+                        p {
+                                font-family: var(--texto-menor);
+                                font-weight: 400;
+                        }
+
+                        .btn-grupo {
+                                display: flex;
+                                justify-content: space-around;
+                                margin-top: 10%;
+                                font-size: 25px;
+                                
+                                .git {
+
+                                       a {
+                                        color: var(--cor-laranja);
+                                        text-decoration: none;
+                                        font-family: var(--fonte-principal);
+                                        font-weight: 600;
+                                       }
+                                       background: transparent;
+                                       border: 5px solid var(--cor-laranja);
+                                       padding: 10px 50px;
+                                       border-radius: 15px;
+                                       &:hover {
+                                        a {
+                                                background-color: var(--cor-laranja);
+                                                color: var(--cor-branca);
+                                        }
+                                        background-color: var(--cor-laranja);
+                                        color: var(--cor-branca);
+                                }
+
+                                  
+                                }
+                                .gdrive {
+                                        a {
+                                                color: var(--cor-roxa);
+                                                text-decoration: none;
+                                                font-family: var(--fonte-principal);
+                                                font-weight: 600;
+                                        }
+                                        background: transparent;
+                                        border: 5px solid var(--cor-roxa);
+                                        padding: 10px 35px;
+                                        border-radius: 10px;
+                                        &:hover {
+                                                a {
+                                                        background-color: var(--cor-roxa);
+                                                        color: var(--cor-branca);
+                                                }
+                                                background-color: var(--cor-roxa);
+                                                color: var(--cor-branca);
+                                        }
+                                }
+                        }
+                }
+        }
+
+}
+
+
+
+
+/* ANIMAÇÕES */
+
+
+.slide-top {
+	-webkit-animation: slide-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+ @-webkit-keyframes slide-top {
+        0% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+        }
+        100% {
+          -webkit-transform: translateY(-100px);
+                  transform: translateY(-100px);
+        }
+      }
+      @keyframes slide-top {
+        0% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+        }
+        100% {
+          -webkit-transform: translateY(-100px);
+                  transform: translateY(-100px);
+        }
+      }
+      
