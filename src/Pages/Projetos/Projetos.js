@@ -1,7 +1,8 @@
 import React from 'react';
 import './projeto.scss';
 import ProjBox from '../../Components/ProjBox/ProjBox';
-import FooterImg from '../../Img/footer.png';
+import ProjBox2 from '../../Components/ProjBox2/ProjBox';
+import ProjBox3 from '../../Components/ProjBox3/ProjBox';
 
 function Projetos() {
     return (
@@ -20,10 +21,9 @@ function Projetos() {
                 </p>
             </div>
             <ProjBox className='auxiliar'/>
-            <ProjBox />
-            <ProjBox />
+            <ProjBox2 className='auxiliar'/>
+            <ProjBox3 className='auxiliar' />
 
-        <img src={FooterImg} className='footer-img' alt='footer'/>
         </div>
         
         

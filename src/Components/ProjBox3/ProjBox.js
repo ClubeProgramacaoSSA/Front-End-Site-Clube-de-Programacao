@@ -12,7 +12,7 @@ function ProjBox() {
                         <img src={Algoritmos01} alt='Algoritmos'/>
                 </div>
                 <div className='text col-sm'>
-                        <h1 className='display-3 text-uppercase'>AULAS</h1>
+                        <h1 className='display-3 text-uppercase'>Competição</h1>
                         <p className='display'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a tempor lorem. 
                         In ac ullamcorper felis. Pellentesque maximus mauris a ligula blandit, nec porta
