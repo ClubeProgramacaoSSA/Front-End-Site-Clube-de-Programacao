@@ -4,25 +4,17 @@ import Algoritmos01 from '../../Img/Algoritmos01.png'
 import GitHub from '@mui/icons-material/GitHub';
 import AddToDrive from '@mui/icons-material/AddToDrive';
 
-function ProjBox() {
+function ProjBox(props) {
   return (
-     <div className='container'>  
-        <div className='projeto row slide-top'>
-                <div className='photo col-md floating'>
-                        <img src={Algoritmos01} alt='Algoritmos'/>
+     <div className='container-projbox'>  
+        <div className='projeto row hvr-grow'>
+                <div className='photo col-md img-fluid'>
+                        <img src={props.image} alt='Algoritmos'/>
                 </div>
                 <div className='text col-sm'>
-                        <h1 className='display-3 text-uppercase'>AULAS</h1>
-                        <p className='display'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a tempor lorem. 
-                        In ac ullamcorper felis. Pellentesque maximus mauris a ligula blandit, nec porta
-                        sem blandit. Nunc ex elit, sodales eget odio quis, scelerisque convallis justo.
-                        Nam ac rhoncus orci. Fusce eu placerat lectus, viverra vehicula diam. Sed sed
-                        bibendum libero, vitae tempor nulla. Orci varius natoque penatibus et magnis 
-                        dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Donec 
-                        sodales sapien turpis, nec mollis leo lacinia vel. Pellentesque molestie tempus 
-                        nunc ut finibus. Nam molestie dapibus ipsum, ac accumsan sem sodales ut. Morbi 
-                        sed dapibus leo.
+                        <h1 className='title display-3 text-uppercase'>{props.title}</h1>
+                        <p className='paragraph display'>
+                                {props.text}
                         </p>
 
                         <div className='btn-grupo'>
@@ -32,7 +24,7 @@ function ProjBox() {
                                 </button>
                                 <button className='gdrive hvr-grow'>
                                         <AddToDrive />
-                                        <a href=''>Google Drive</a>
+                                        <a href=''>GDrive</a>
                                 </button>
 
                         </div> {/* btn-grupo */}
