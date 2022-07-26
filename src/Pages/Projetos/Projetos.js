@@ -50,7 +50,6 @@ function Projetos() {
             image={require('../../Img/Aulas.png')}
             className='auxiliar'
             />
-
     </div>
     )
 }
