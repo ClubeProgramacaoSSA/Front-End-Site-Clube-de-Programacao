@@ -13,6 +13,7 @@ module.exports = {
       "xl": {"min": "1200px"}
     },
     extend: {},
+
   },
   plugins: [],
 }
