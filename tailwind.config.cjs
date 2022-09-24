@@ -12,7 +12,12 @@ module.exports = {
       "lg": {"min": "992px", "max": "1199.98px"},
       "xl": {"min": "1200px"}
     },
-    extend: {},
+    extend: {
+      colors: {
+        "orange": "#FB9304",
+        "purple": "#AD00FF"
+      }
+    },
 
   },
   plugins: [],
