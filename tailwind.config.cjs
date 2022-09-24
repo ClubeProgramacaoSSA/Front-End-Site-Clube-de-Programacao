@@ -5,6 +5,10 @@ module.exports = {
     "./src/**/*.tsx"
   ],
   theme: {
+    fontFamily: {
+      'principal' : ['Roboto', 'sans-serif'],
+      'menor' : ['Manrope', 'sans-serif'],
+    },
     screens: {
       "xsm" : {"max" : "575.98px"},
       "sm": {"min": "576px", "max": "767.98px"},
