@@ -1,5 +1,5 @@
 // import { useState, useEffect } from "react";
-import { api } from "./api";
+import { api } from "../../utils/api-simulator";
 import { WorkshopList } from "./components/WorkshopList";
 
 //* API DE TESTE
