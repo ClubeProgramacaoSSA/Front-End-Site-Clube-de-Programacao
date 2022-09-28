@@ -1,19 +1,19 @@
 // import { useState, useEffect } from "react";
-import { Tabs } from "./components/Tabs";
-import { api } from "./api";
+import { api } from "../../utils/api-simulator";
+import { WorkshopList } from "./components/WorkshopList";
 
 //* API DE TESTE
-export interface Content {
-  workshop: string;
-  alt: string;
-  logoUrl: string;
-  avatarUrl: string;
-  content: string;
+export interface ContentProps {
+  workshopName: string;
+  iconUrl: string;
+  iconDescription: string;
+  workshopTitle: string;
+  workshopContent: string;
+  memberName: string;
+  memberAvatarUrl: string;
+  memberSocialMidia: string;
   videoUrl: string;
   pdfUrl: string;
-  social: string;
-  avatarName: string;
-  title: string;
 }
 
 export function WorkShops() {
@@ -30,14 +30,14 @@ export function WorkShops() {
   return (
     <main className="max-w-xs m-auto text-white flex flex-col items-center">
       <h1 className="font-bold text-4xl mt-8">
-        Work<span className="text-[#FB9304]">shops</span>
+        Work<span className="text-orange">shops</span>
       </h1>
       <p className="font-medium text-center mt-10 text-xl">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam
         asperiores nesciunt doloremque beatae ab adipisci quisquam, sed quae
         temporibus
       </p>
-      <Tabs data={api} />
+      <WorkshopList workshops={api} />
     </main>
   );
 }
