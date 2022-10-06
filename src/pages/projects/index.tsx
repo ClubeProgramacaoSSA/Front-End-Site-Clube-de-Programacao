@@ -1,10 +1,12 @@
 //todo: fazer o componente do Projbox
 //todo: criar o caminho para puxar os projetos do banco de dados
+import React from 'react';
 
 export function Projects() {
+
 	return (
-		<main>
-			<div className="text-white max-w-4xl mx-auto my-20 flex flex-col items-center">
+		<main className='max-w-4xl mx-auto my-20'>
+			<div className="text-white flex flex-col items-center">
 				<h1 className="my-8 font-Roboto font-bold md:text-6xl text-5xl ">
 					<span className="text-orange">P</span>ROJETOS
 				</h1>
@@ -36,6 +38,9 @@ export function Projects() {
 					do clube. Aqui estarão registrados os principais projetos que a equipe
 					do Clube já realizou.
 				</p>
+			</div>
+			<div className=''>
+
 			</div>
 		</main>
 	);
