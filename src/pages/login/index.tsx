@@ -8,7 +8,7 @@ export function Login() {
 		if(body) {
 			body.style.backgroundImage = falconsIcon;
 		}
-		debugger;
+		// debugger;
 	},[])
 
 	return( 
