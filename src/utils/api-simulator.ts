@@ -1,4 +1,4 @@
-export const api = [
+export const apiGetAllWorkShops = () => [
 	{
 		workshopName: "C++",
 		iconDescription: "C++ Logo",
@@ -42,4 +42,4 @@ export const api = [
 		memberName: "COMODÃO",
 		workshopTitle: "WorkShop Typescript",
 	},
-];
+]

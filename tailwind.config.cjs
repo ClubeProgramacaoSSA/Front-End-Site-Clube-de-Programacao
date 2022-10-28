@@ -21,6 +21,9 @@ module.exports = {
 			colors: {
 				"orange": "#FB9304",
 				"purple": "#AD00FF"
+			},
+			backgroundColor:{
+				defaultGray:"#c6c6c6"
 			}
 		},
 

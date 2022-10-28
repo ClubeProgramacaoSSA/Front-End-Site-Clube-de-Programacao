@@ -1,6 +1,6 @@
 //todo: fazer o componente do Projbox
 //todo: criar o caminho para puxar os projetos do banco de dados
-import React from 'react';
+import React from "react";
 import {Projbox} from "../projects/components/projbox";	
 
 export function Projects() {

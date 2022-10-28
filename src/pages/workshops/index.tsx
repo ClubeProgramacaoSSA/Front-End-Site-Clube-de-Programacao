@@ -1,5 +1,5 @@
 // import { useState, useEffect } from "react";
-import { api } from "../../utils/api-simulator";
+import { apiGetAllWorkShops } from "../../utils/api-simulator";
 import { WorkshopList } from "./components/WorkshopList";
 
 //* API DE TESTE
@@ -37,7 +37,7 @@ export function WorkShops() {
 				asperiores nesciunt doloremque beatae ab adipisci quisquam, sed quae
 				temporibus
 			</p>
-			<WorkshopList workshops={api} />
+			<WorkshopList workshops={ apiGetAllWorkShops() } />
 		</main>
 	);
 }
