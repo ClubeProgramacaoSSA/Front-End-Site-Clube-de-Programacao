@@ -1,17 +1,26 @@
-//todo: fazer o componente do Projbox
 //todo: criar o caminho para puxar os projetos do banco de dados
+//todo: componentizar de forma padronizada a de jap
+//todo: background mais dinamico
 import React from "react";
-import {Projbox} from "../projects/components/projbox";	
+import { Projbox } from "../projects/components/projbox";
+import imagem from "./Quadro.png";
+
+export interface projectTypesProps {
+	imgUrl: string,
+	title: string,
+	text: string,
+	linkGit: string,
+	linkDrive: string,
+}
 
 export function Projects() {
-
 	return (
-		<main className='max-w-4xl mx-auto my-20'>
+		<main className="max-w-6xl mx-auto my-20">
 			<div className="text-white flex flex-col items-center">
-				<h1 className="my-8 font-Roboto font-bold md:text-6xl text-5xl ">
+				<h1 className="my-8 font-Roboto font-bold xsm:text-5xl sm:text-5xl text-8xl ">
 					<span className="text-orange">P</span>ROJETOS
 				</h1>
-				<p className="text-center font-Manrope mx-6 font-base text-xl">
+				<p className="text-center font-Manrope mx-6 font-base text-2xl sm:text-lg xsm:text-lg">
 					O clube de progamação do SENAI/CIMATEC além de realizar torneios e
 					aulas, também desenvolve projetos com os integrantes. Indo de
 					websites, até programas funcionais para resolver determinados
@@ -39,12 +48,8 @@ export function Projects() {
 					do clube. Aqui estarão registrados os principais projetos que a equipe
 					do Clube já realizou.
 				</p>
+				<Projbox />
 			</div>
-			<div className=''>
-
-			</div>
-
-			<Projbox />
 		</main>
 	);
 }
