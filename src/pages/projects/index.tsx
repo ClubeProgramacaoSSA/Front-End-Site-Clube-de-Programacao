@@ -5,14 +5,6 @@ import React from "react";
 import { Projbox } from "../projects/components/projbox";
 import imagem from "./Quadro.png";
 
-export interface projectTypesProps {
-	imgUrl: string,
-	title: string,
-	text: string,
-	linkGit: string,
-	linkDrive: string,
-}
-
 export function Projects() {
 	return (
 		<main className="max-w-6xl mx-auto my-20">
@@ -48,7 +40,7 @@ export function Projects() {
 					do clube. Aqui estarão registrados os principais projetos que a equipe
 					do Clube já realizou.
 				</p>
-				<Projbox />
+				{/* <Projbox /> */}
 			</div>
 		</main>
 	);
