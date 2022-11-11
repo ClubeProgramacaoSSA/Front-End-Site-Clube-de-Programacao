@@ -1,9 +1,13 @@
 import React from "react";
 import { GithubLogo, GoogleLogo } from "phosphor-react";
 
-interface projectProps {
-	projects: projectTypesProps;
-}	
+export interface projectTypesProps {
+	imgUrl: string,
+	title: string,
+	text: string,
+	linkGit: string,
+	linkDrive: string,
+}
 
 export function Projbox({imgUrl, title, text, linkGit, linkDrive}: projectTypesProps) {
 	return (
