@@ -1,5 +1,6 @@
-// import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { api } from "../../utils/api-simulator";
+import  axios  from "axios";
 import { WorkshopList } from "./components/WorkshopList";
 
 //* API DE TESTE
@@ -19,13 +20,23 @@ export interface ContentProps {
 export function WorkShops() {
   //! Aguardando Back-End
 
-  // const [workShops, setWorkShops] = useState<Content[]>([]);
+  const [data, setData] = useState(null);
 
-  // useEffect(() => {
-  //   fetch("url")
-  //     .then((response) => response.json())
-  //     .then((data) => setWorkShops(data));
-  // }, []);
+  useEffect(() => {
+    async function getData(){
+      const response = await axios.get("http://localhost:8080/projects/projectType/", {
+        data: { "projectType": 'Desenvolvimento de Produto' },
+        headers: {"content-type": "application/json"}
+      })
+      setData(response.data)
+    }
+    getData()
+  }, [])
+
+  useEffect(() => {
+    console.log(data)
+  
+  }, [data])
 
   return (
     <main className="max-w-xs m-auto text-white flex flex-col items-center">
