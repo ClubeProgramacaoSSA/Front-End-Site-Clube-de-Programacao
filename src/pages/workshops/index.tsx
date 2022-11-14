@@ -24,11 +24,9 @@ export function WorkShops() {
 
   useEffect(() => {
     async function getData(){
-      const response = await axios.get("http://localhost:8080/projects/projectType/", {
-        data: { "projectType": 'Desenvolvimento de Produto' },
-        headers: {"content-type": "application/json"}
-      })
-      setData(response.data)
+      axios.post("http://localhost:8080/projects/projectType", { projectType: 'Desenvolvimento de Produto' })
+      .then(({data}) => console.log(data))
+      .catch((err) => console.error(err))
     }
     getData()
   }, [])
