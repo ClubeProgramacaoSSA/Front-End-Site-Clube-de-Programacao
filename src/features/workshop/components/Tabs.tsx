@@ -1,5 +1,5 @@
 import { Tab } from "@headlessui/react";
-import { ContentProps } from "../index";
+import { ContentProps } from "../pages/index";
 import { Workshop } from "./Workshop";
 
 //TODO: Active tab indentification
