@@ -4,21 +4,21 @@ import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
-    <div className="fixed top-0 left-0 w-full flex-row shadow-[0_20px_30px_rgba(251,147,4,0.2)]">
+    <div className="z-50 fixed top-0 left-0 w-full flex-row shadow-[0_20px_30px_rgba(251,147,4,0.2)]">
       <div className="flex flex-row justify-end items-center pr-10 gap-4 w-full h-16 border-b-2 border-orange shadow-[inset_0_70px_60px_rgba(169,169,169,0.2)] bg-black ">
         <NavLink
           to="/"
           className="
-          rounded-md
-          text-orange 
-          flex 
-          items-center
-          flex-col 
-          text-center 
-          font-bold 
-          text-base
-          px-2
-          hover:bg-gray-600
+            rounded-md
+            text-orange 
+            flex 
+            items-center
+            flex-col 
+            text-center 
+            font-bold 
+            text-base
+            px-2
+            hover:bg-gray-600
           "
         >
           Home
