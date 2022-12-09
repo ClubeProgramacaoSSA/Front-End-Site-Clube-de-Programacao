@@ -5,7 +5,7 @@ export function Login() {
 	const usernameRef = useRef<string>('');
 
 	return (
-		<div style={{height:'100vh',display:'flex',alignItems:'center', justifyContent:'center' }}>
+		<div style={{minHeight:'100vh',display:'flex',alignItems:'center', justifyContent:'center' }}>
 			<main className='px-20 py-10 max-w-2xl mx-auto bg-slate-800 rounded-lg xsm:w-full xsm:h-full xsm:absolute'>
 					<div className="text-center font-Roboto text-2xl mb-10 text-stone-500">
 						<h2 className=" font-bold ">Sign <span className="text-orange">In</span></h2>
@@ -52,11 +52,19 @@ export function Login() {
 								/>
 							</div>
 					</div>
-					<div className="flex justify-between ">
-						<button className="bg-orange px-4 font-bold py-0 rounded-lg inline-block ease-in-out hover:text-yellow-50">Sign In!</button>
+					<div className="flex justify-between text-stone-400 font-bold">
+						{/* <button className="bg-orange  px-4 font-bold py-0 rounded-lg inline-block ease-in-out hover:text-yellow-50">Sign In!</button> */}
+						<a 
+						href="#"
+						className="px-4 py-1 sm:px-4 xsm:px-4 sm:py-1 xsm:py-1 gap-3 flex items-center border-solid border-2 rounded-lg 
+						border-orange hover:scale-110 hover:bg-orange duration-300 hover:text-yellow-50"
+						>
+							Login
+						</a>
 						<div className="font-semibold text-stone-400 ">
 							<p>Don`t registered yet?</p> 
-							<span onClick={() => console.log('Sign-Up!')} className="inline-block rounded-sm border-b-2 border-spacing-1 ease-in-out hover:bg-orange hover:text-yellow-50 border-orange cursor-pointer p-1 ">
+							<span onClick={() => console.log('Sign-Up!')} className="px-4 py-1 sm:px-4 xsm:px-4 sm:py-1 xsm:py-1 gap-3 flex items-center border-solid border-2 rounded-lg 
+						border-orange hover:scale-110 hover:bg-orange duration-300 hover:text-yellow-50 ">
 								Sign Up!
 							</span>
 						</div>
