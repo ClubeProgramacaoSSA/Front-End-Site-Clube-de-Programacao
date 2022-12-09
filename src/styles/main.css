@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-    font-family: "Roboto", sans-serif;
+    font-family: "roboto", sans-serif;
 }
 
 input[type="text"], input[type="password"], textarea, select { 
