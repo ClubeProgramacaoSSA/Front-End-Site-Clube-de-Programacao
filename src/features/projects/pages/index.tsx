@@ -19,7 +19,7 @@ const apiTeste = {
 export function Projects() {
     return (
         <Layout navbar>
-            <main className="max-w-4xl mx-auto my-20">
+            <main className="w-full mx-auto my-20">
                 <div className="text-white flex flex-col items-center">
                     <h1 className="my-8 font-Roboto font-bold xsm:text-5xl sm:text-5xl text-7xl ">
                         <span className="text-orange">P</span>ROJETOS

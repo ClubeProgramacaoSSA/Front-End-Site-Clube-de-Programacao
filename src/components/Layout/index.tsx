@@ -8,7 +8,7 @@ interface LayoutProps {
 
 export function Layout({ children, navbar }: LayoutProps) {
     return (
-        <div className="min-h-screen w-screen overflow-y-auto">
+        <div className="min-h-screen w-screen overflow-y-auto overflow-x-hidden">
             {navbar ? <NavBar /> : null}
             {children}
         </div>

@@ -13,8 +13,8 @@ export function Projbox({
 	data: { imgUrl, title, text, linkGit, linkDrive },
 }: projectTypesProps) {
 	return (
-		<main className="mt-16 md:ml-4 md:mr-4 hover:scale-105 duration-300 rounded-xl">
-			<div className="flex xsm:flex-col sm:flex-col flex-row text-white border-orange">
+		<main className="mt-16 md:ml-4 md:mr-4 hover:scale-105 duration-300 rounded-xl	">
+			<div className="flex sm:flex-col flex-row text-white border-orange">
 				<div className="xsm:self-center sm:self-center self-auto">
 					<img
 						className="max-h-96 rounded-tl-lg rounded-bl-xl sm:rounded-xl xsm:rounded-xl md:rounded-xl"
@@ -23,7 +23,7 @@ export function Projbox({
 					/>
 				</div>
 				<div className="flex flex-col ml-4 mr-4 mt-5">
-					<strong className="font-Roboto text-5xl sm:self-center xsm:self-center self-start text-start md:ml-5 lg:ml-5 xl:ml-5 bg-clip-text hover:text-transparent hover:bg-gradient-to-l from-pink-500 to-orange">
+					<strong className="font-Roboto text-5xl sm:self-center xsm:self-center self-start text-start mx-auto bg-clip-text hover:text-transparent hover:bg-gradient-to-l from-pink-500 to-orange">
 						{title}
 					</strong>
 					<strong className="font-Manrope text-xl sm:text-lg xsm:text-lg font-normal text-gray-400 xsm:self-center sm:self-center self-start max-w-md sm:text-center xsm:text-center text-start mt-3 md:ml-5 lg:ml-5 xl:ml-5">
