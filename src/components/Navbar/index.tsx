@@ -18,7 +18,7 @@ function NavBar() {
         <NavLink to="/workshops" className="text-orange flex items-center text-center font-bold text-base">
           Workshops
         </NavLink>
-        <NavLink to="/login" className="text-[#232323] flex items-center text-center font-bold text-base bg-orange px-4 py-1 rounded-2xl hover:text-yellow-50">
+        <NavLink to="/login" className="text-[#232323] flex items-center text-center font-bold text-base bg-orange px-4 py-1 rounded-2xl duration-300 hover:text-yellow-50">
           Login
         </NavLink>
       </div>
