@@ -1,6 +1,6 @@
 // import { useState, useEffect } from "react";
-import { apiGetAllWorkShops } from "../../utils/api-simulator";
-import { WorkshopList } from "./components/WorkshopList";
+import { apiGetAllWorkShops } from "../../../utils/api-simulator";
+import { WorkshopList } from "../components/WorkshopList";
 
 //* API DE TESTE
 export interface ContentProps {
