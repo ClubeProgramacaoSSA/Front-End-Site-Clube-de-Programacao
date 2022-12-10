@@ -1,6 +1,6 @@
 import { GithubLogo, GoogleLogo } from "phosphor-react";
 
-interface projectTypesProps {
+export interface projectTypesProps {
 	data: {
 		imgUrl: string;
 		title: string;
