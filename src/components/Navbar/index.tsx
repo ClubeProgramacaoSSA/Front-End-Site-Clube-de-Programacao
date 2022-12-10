@@ -10,7 +10,7 @@ function NavBar() {
           to="/"
           className="
             rounded-md
-            text-orange 
+            text-gray-100 
             flex 
             items-center
             flex-col 
@@ -25,7 +25,7 @@ function NavBar() {
         </NavLink>
         <NavLink
           to="/sobrenos"
-          className="text-orange flex  px-2 rounded-md
+          className="text-gray-100 flex  px-2 rounded-md
           items-center text-center  text-sm font-bold 
           hover:bg-gray-600">
           Sobre Nós
@@ -33,13 +33,13 @@ function NavBar() {
         <NavLink
           to="/projects"
           className=" px-2 rounded-md
-          hover:bg-gray-600 text-orange flex items-center text-center  text-sm font-bold">
+          hover:bg-gray-600 text-gray-100 flex items-center text-center  text-sm font-bold">
           Projetos
         </NavLink>
         <NavLink
           to="/workshops"
           className="
-          rounded-md px-2 hover:bg-gray-600 text-orange flex items-center text-center  text-sm font-bold">
+          rounded-md px-2 hover:bg-gray-600 text-gray-100 flex items-center text-center  text-sm font-bold">
           Workshops
         </NavLink>
         <NavLink to="/login"

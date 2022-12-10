@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+*::-webkit-scrollbar {
+    width: 0.3em;
+}
+*::-webkit-scrollbar-thumb {
+
+    border-radius: 0.2em;
+    background-color: rgba(80, 77, 77, 0.1);
+    outline: 2px solid slategrey;
+}
+
 html {
     overflow-x: hidden;
     font-family: "roboto", sans-serif;
