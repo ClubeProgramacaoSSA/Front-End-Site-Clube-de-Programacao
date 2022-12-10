@@ -3,7 +3,7 @@ import { Listbox, Transition } from "@headlessui/react";
 import { useState, Fragment } from "react";
 import { CaretDown, CheckCircle } from "phosphor-react";
 import { Workshop } from "./Workshop";
-import { ContentProps } from "../pages/index";
+import { ContentProps } from "../index";
 
 interface WorkshopListProps {
 	workshops: ContentProps[];

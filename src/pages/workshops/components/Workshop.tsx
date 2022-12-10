@@ -1,4 +1,4 @@
-import { ContentProps } from "../pages/index";
+import { ContentProps } from "../index";
 import { VideoCamera, FilePdf } from "phosphor-react";
 
 interface WorkshopProps {

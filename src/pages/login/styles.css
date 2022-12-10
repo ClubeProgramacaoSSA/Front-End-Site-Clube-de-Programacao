@@ -16,6 +16,17 @@
     transform: rotateY(180deg);
     
 }
+@keyframe waveAnimate {
+    0,100% {
+        rotateY(180deg);
+    }
+    50% {
+        rotateY(270deg);
+    }
+    75% {
+        rotateY(360deg);
+    }
+}
 
 .wave .shape-fill {
     fill: #FB9304;
