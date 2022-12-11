@@ -1,0 +1,84 @@
+.containerA {
+    color: var(--cor-branca);
+}
+.teste {
+    color: var(--cor-branca);
+}
+.scroller {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 23%;
+    gap: 2%;
+    overflow: auto;
+    padding: 3%;
+    padding-top: 8%;
+    gap: 1%;
+
+    .membro {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .imgMembro {
+            align-items: center;
+        }
+    }
+}
+
+.carousel{
+    padding-bottom: 5%;
+}
+
+.apoio {
+    padding-top: 5%;
+    .textApoio {
+        color: var(--cor-branca);
+        font-family: var(--texto-principal);
+        font-weight: 800;
+        font-size: 500%;
+        text-align: center;
+
+        .orangeText {
+            color: var(--cor-laranja);
+        }
+    }
+
+    .apoioContainer {
+        display: flex;
+        padding: 5%;
+        justify-content: center;
+        align-items: center;
+
+        .senai {
+            width: 35%;
+        }
+
+        .apoioCircle {
+            width: 15%;
+            padding-left: 3%;
+        }
+    }
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    span {
+        padding-top: 15%;
+        position: absolute;
+        z-index: 1;
+        color: var(--cor-branca);
+        font-family: var(--texto-principal);
+        font-weight: 450;
+        font-size: 300%;
+        text-align: center;
+
+    }
+
+    img {
+        z-index: 0;
+    }
+}

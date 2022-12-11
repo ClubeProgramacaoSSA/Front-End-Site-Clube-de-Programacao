@@ -24,7 +24,7 @@ function NavBar() {
           Home
         </NavLink>
         <NavLink
-          to="/sobrenos"
+          to="/aboutUS"
           className="text-gray-100 flex  px-2 rounded-md
           items-center text-center  text-sm font-bold 
           hover:bg-gray-600">

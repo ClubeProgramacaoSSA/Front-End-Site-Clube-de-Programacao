@@ -10,12 +10,16 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.2",
+    "axios": "^1.2.1",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.0"
+    "react-router-dom": "^6.4.0",
+    "sass": "^1.56.2"
   },
   "devDependencies": {
+    "@brainhubeu/react-carousel": "^2.0.4",
+    "@types/brainhubeu__react-carousel": "^2.0.5",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.38.1",

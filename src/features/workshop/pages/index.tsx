@@ -1,33 +1,44 @@
-// import { useState, useEffect } from "react";
+/* eslint-disable indent */
+import { useState, useEffect } from "react";
 import { Layout } from "../../../components/Layout";
-import { apiGetAllWorkShops } from "../../../utils/api-simulator";
-import { WorkshopList } from "../components/WorkshopList";
+import { WorkshopList, WorkshopListProps } from "../components/WorkshopList";
+import axios from "axios";
 
 //* API DE TESTE
 export interface ContentProps {
-	workshopName: string;
-	iconUrl: string;
-	iconDescription: string;
-	workshopTitle: string;
-	workshopContent: string;
-	memberName: string;
-	memberAvatarUrl: string;
-	memberSocialMidia: string;
-	videoUrl: string;
-	pdfUrl: string;
+	assunto: string
+	descricao: string
+	dt_imagem: Date
+	dt_inicio: Date
+	dt_termino: Date
+	dt_termino_previsto: Date
+	imagem: string
+	nome_imagem: string
+	nome_lider: string
+	nome_projeto: string
+	tipo: string
+	url_github: string
 }
 
 export function WorkShops() {
-	//! Aguardando Back-End
 
-	// const [workShops, setWorkShops] = useState<Content[]>([]);
+	const [data, setData] = useState<WorkshopListProps>();
 
-	// useEffect(() => {
-	//   fetch("url")
-	//     .then((response) => response.json())
-	//     .then((data) => setWorkShops(data));
-	// }, []);
+	useEffect(() => {
+		async function getData(){
+		  axios.get("http://localhost:8080/projects/WorkShop")
+		  .then(({ data }) => { setData(data); console.log(data); })
+		  .catch((err) => console.error(err));
+		}
+		getData();
+	  }, []);
+	
+	  useEffect(() => {
+		console.log(data);
+	  
+	  }, [data]);
 
+	if(data != undefined)
 	return (
 		<Layout navbar>
 			<main className="max-w-xs m-auto text-white flex flex-col items-center">
@@ -39,7 +50,7 @@ export function WorkShops() {
 					asperiores nesciunt doloremque beatae ab adipisci quisquam, sed quae
 					temporibus
 				</p>
-				<WorkshopList workshops={apiGetAllWorkShops()} />
+				<WorkshopList workshops = {data} />
 			</main>
 		</Layout>
 	);

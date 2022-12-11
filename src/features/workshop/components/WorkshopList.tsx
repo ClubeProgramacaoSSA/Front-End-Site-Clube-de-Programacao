@@ -5,7 +5,7 @@ import { CaretDown, CheckCircle } from "phosphor-react";
 import { Workshop } from "./Workshop";
 import { ContentProps } from "../pages/index";
 
-interface WorkshopListProps {
+export interface WorkshopListProps {
 	workshops: ContentProps[];
 }
 
@@ -28,11 +28,12 @@ export function WorkshopList({ workshops }: WorkshopListProps) {
 						</Listbox.Label>
 						<Listbox.Button className="py-2 flex items-center justify-center gap-10 bg-neutral-800 rounded-full focus:outline-none">
 							<img
-								className="w-8"
-								src={selectedWorkshop.iconUrl}
-								alt={selectedWorkshop.iconDescription}
+								
+								className = "w-8 rounded-full border-2"
+								src={"https://picsum.photos/200/300"}
+								alt={selectedWorkshop.descricao}
 							/>
-							<span className="text-2xl">{selectedWorkshop.workshopName}</span>
+							<span className="text-2xl">{selectedWorkshop.nome_projeto}</span>
 							<CaretDown
 								className={`${
 									open ? "rotate-180" : null
@@ -57,7 +58,7 @@ export function WorkshopList({ workshops }: WorkshopListProps) {
 													return (
 														<li
 															className={`
-                                ${
+                                								${
 																	active
 																		? "bg-neutral-500 scale-105 z-10 transition-transform duration-300"
 																		: "bg-neutral-800"
@@ -77,11 +78,11 @@ export function WorkshopList({ workshops }: WorkshopListProps) {
 															<div className="flex gap-3">
 																<img
 																	className="w-8"
-																	src={workshop.iconUrl}
-																	alt={workshop.iconDescription}
+																	src={"https://picsum.photos/200/300"}
+																	alt={workshop.descricao}
 																/>
 																<span className="text-2xl">
-																	{workshop.workshopName}
+																	{workshop.nome_projeto}
 																</span>
 															</div>
 														</li>
