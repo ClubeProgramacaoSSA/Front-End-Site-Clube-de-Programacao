@@ -15,17 +15,17 @@ export function Home() {
 	return (
 
 		<Layout navbar>
-				
+
 			<div className="containerA text-white" >
 				<LandBox
 					align="firstTextL"
-					title1='"NÃO SEJA UM'
-					title2=" PATO"
+					title1='"NÃO SEJA UM '
+					title2="PATO"
 					title3='."'
 					subtext="~Mestre Facundes"
 					image={Landing12}
 				/>
-				<LandBox className="mt-5"
+				<LandBox
 					align="firstTextR"
 					title1='"SOBRE'
 					title2=" NÓS"
@@ -90,7 +90,7 @@ export function Home() {
 			</div>
 
 		</Layout>
-	
+
 	);
 }
 
