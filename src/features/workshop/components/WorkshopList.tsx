@@ -30,8 +30,8 @@ export function WorkshopList({ workshops }: WorkshopListProps) {
 							<img
 								
 								className = "w-8 rounded-full border-2"
-								src={"https://picsum.photos/200/300"}
-								alt={selectedWorkshop.descricao}
+								src={selectedWorkshop.url_imagem}
+								alt={selectedWorkshop.descricao_imagem}
 							/>
 							<span className="text-2xl">{selectedWorkshop.nome_projeto}</span>
 							<CaretDown
@@ -78,9 +78,8 @@ export function WorkshopList({ workshops }: WorkshopListProps) {
 															<div className="flex gap-3">
 																<img
 																	className="w-8"
-																	src={"https://picsum.photos/200/300"}
-																	alt={workshop.descricao}
-																/>
+																	
+																	src={workshop.url_imagem} />
 																<span className="text-2xl">
 																	{workshop.nome_projeto}
 																</span>

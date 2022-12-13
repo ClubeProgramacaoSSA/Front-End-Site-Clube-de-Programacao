@@ -4,25 +4,27 @@ import { GithubLogo, GoogleLogo } from "phosphor-react";
 
 export interface projectTypesProps {
 	data: {
-		assunto: string
-		descricao: string
-		dt_imagem: Date
-		dt_inicio: Date
-		dt_termino: Date
-		dt_termino_previsto: Date
-		imagem: string
-		nome_imagem: string
-		nome_lider: string
-		nome_projeto: string
-		url_github: string
-		tipo: string
-	};
-}
+	
+		descricao_projeto: string,
+		descricao_imagem: string,
+		dt_inicio: string,
+		dt_termino_previsto: string,
+		dt_termino: string,
+		nome_projeto: string,
+		url_github: string,
+		tipo: string,
+		nome_imagem: string,
+		dt_imagem: string,
+		url_imagem: string,
+		nome_lider: string,
+	}
+};
+
 
 export function Projbox({
 	
-	data: { assunto, descricao, dt_imagem, dt_inicio, dt_termino, dt_termino_previsto, imagem, nome_imagem,
-			nome_lider, nome_projeto, url_github, tipo},
+	data: { descricao_imagem, descricao_projeto, dt_imagem, dt_inicio, dt_termino, dt_termino_previsto, imagem, nome_imagem,
+			nome_lider, nome_projeto, url_github, tipo, url_imagem},
 
 }: projectTypesProps) {
 
@@ -32,16 +34,16 @@ export function Projbox({
 				<div className="xsm:self-center sm:self-center self-auto">
 					<img
 						className="max-h-96 rounded-tl-lg rounded-bl-xl sm:rounded-xl xsm:rounded-xl md:rounded-xl border-orange border-b-2"
-						src = {"https://picsum.photos/200/300"}
+						src = {url_imagem}
 						alt="Imagem"
 					/>
 				</div>
 				<div className="flex flex-col ml-4 mr-4 mt-5">
 					<strong className="font-Roboto text-5xl sm:self-center xsm:self-center self-start text-start mx-auto bg-clip-text hover:text-transparent hover:bg-gradient-to-l from-pink-500 to-orange">
-						{assunto}
+						{nome_projeto}
 					</strong>
 					<strong className="font-Manrope text-xl sm:text-lg xsm:text-lg font-normal text-gray-400 xsm:self-center sm:self-center self-start max-w-md sm:text-center xsm:text-center text-start mt-3 md:ml-5 lg:ml-5 xl:ml-5">
-						{descricao}
+						{descricao_projeto}
 					</strong>
 					<div className="flex flex-row ml-5 lg:mr-5 xl:mr-5 sm:ml-0 xsm:ml-0 mt-5 gap-10 font-Roboto font-medium sm:gap-2 xsm:gap-2 self-center">
 						<a

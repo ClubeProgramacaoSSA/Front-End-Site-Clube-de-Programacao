@@ -6,18 +6,18 @@ import axios from "axios";
 
 //* API DE TESTE
 export interface ContentProps {
-	assunto: string
-	descricao: string
-	dt_imagem: Date
-	dt_inicio: Date
-	dt_termino: Date
-	dt_termino_previsto: Date
-	imagem: string
-	nome_imagem: string
-	nome_lider: string
-	nome_projeto: string
-	tipo: string
-	url_github: string
+	descricao_projeto: string,
+	descricao_imagem: string,
+	dt_inicio: string,
+	dt_termino_previsto: string,
+	dt_termino: string,
+	nome_projeto: string,
+	url_github: string,
+	tipo: string,
+	nome_imagem: string,
+	dt_imagem: string,
+	url_imagem: string,
+	nome_lider: string,
 }
 
 export function WorkShops() {
@@ -26,17 +26,12 @@ export function WorkShops() {
 
 	useEffect(() => {
 		async function getData(){
-		  axios.get("http://localhost:8080/projects/WorkShop")
+		  axios.get("http://localhost:8080/projects/pertype/workshop")
 		  .then(({ data }) => { setData(data); console.log(data); })
 		  .catch((err) => console.error(err));
 		}
 		getData();
 	  }, []);
-	
-	  useEffect(() => {
-		console.log(data);
-	  
-	  }, [data]);
 
 	if(data != undefined)
 	return (
@@ -46,9 +41,8 @@ export function WorkShops() {
 					Work<span className="text-orange">shops</span>
 				</h1>
 				<p className="font-medium text-center mt-10 text-xl">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam
-					asperiores nesciunt doloremque beatae ab adipisci quisquam, sed quae
-					temporibus
+				O clube de programação disponibiliza várias workshops para o aprendizado em programação e afins, confira algumas delas e se inscreva já!!!
+
 				</p>
 				<WorkshopList workshops = {data} />
 			</main>

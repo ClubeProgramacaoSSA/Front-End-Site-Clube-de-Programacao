@@ -14,16 +14,16 @@ export function Workshop({ workShop: workshop }: WorkshopProps) {
 			<div className="text-2xl font-semibold flex flex-col items-center gap-2">
 				<img
 					className="w-13"
-					src={"https://picsum.photos/200/300"}
+					src={workshop.url_imagem}
 					alt="Avatar do responsavel"
 				/>
 				<div className="flex flex-col items-center">
 					<span>{workshop.nome_projeto}</span>
-					<span className="text-sm">{workshop.nome_imagem}</span>
+					<span className="text-sm">{workshop.descricao_imagem}</span>
 				</div>
 			</div>
 			<p className="font-medium text-justify mt-10 text-xl mb-5">
-				{workshop.descricao}
+				{workshop.descricao_projeto}
 			</p>
 			<div className="flex flex-col gap-5 items-center mb-10 font-bold text-xl">
 				<a

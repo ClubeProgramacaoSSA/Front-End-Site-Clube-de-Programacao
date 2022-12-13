@@ -17,10 +17,10 @@ export function Tabs({ data }: TabsProps) {
 						<Tab key={index} className="flex gap-2 items-center">
 							<img
 								className="w-12"
-								src={item.iconUrl}
-								alt={item.iconDescription}
+								src={item.url_imagem}
+								alt={item.descricao}
 							/>
-							{item.workshopName}
+							{item.nome_projeto}
 						</Tab>
 					);
 				})}
