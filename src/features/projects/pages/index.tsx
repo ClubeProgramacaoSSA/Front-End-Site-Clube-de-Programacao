@@ -24,7 +24,7 @@ export function Projects() {
 			data: {
 				assunto: 'Desenvolvimento de API',
 				descricao: 'Foi desenvolvido uma API (Application Program Interface) que facilitasse os processos dentro do clube então nós fizemos :)',
-				url_github: 'https://github.com/ClubeProgramacaoSSA/Back-End-Site-Clube-de-Programacao'
+				url_github: 'https://github.com/ClubeProgramacaoSSA/Back-End-Site-Clube-de-Programacao',
 			}
 		}
 	]);
