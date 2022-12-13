@@ -6,23 +6,23 @@ export interface projectTypesProps {
 	data: {
 		assunto: string
 		descricao: string
-		dt_imagem: Date
-		dt_inicio: Date
-		dt_termino: Date
-		dt_termino_previsto: Date
-		imagem: string
-		nome_imagem: string
-		nome_lider: string
-		nome_projeto: string
+		dt_imagem?: Date
+		dt_inicio?: Date
+		dt_termino?: Date
+		dt_termino_previsto?: Date
+		imagem?: string
+		nome_imagem?: string
+		nome_lider?: string
+		nome_projeto?: string
 		url_github: string
-		tipo: string
+		tipo?: string
 	};
 }
 
 export function Projbox({
-	
+
 	data: { assunto, descricao, dt_imagem, dt_inicio, dt_termino, dt_termino_previsto, imagem, nome_imagem,
-			nome_lider, nome_projeto, url_github, tipo},
+		nome_lider, nome_projeto, url_github, tipo },
 
 }: projectTypesProps) {
 
@@ -32,7 +32,7 @@ export function Projbox({
 				<div className="xsm:self-center sm:self-center self-auto">
 					<img
 						className="max-h-96 rounded-tl-lg rounded-bl-xl sm:rounded-xl xsm:rounded-xl md:rounded-xl border-orange border-b-2"
-						src = {"https://picsum.photos/200/300"}
+						src={"https://picsum.photos/200/300"}
 						alt="Imagem"
 					/>
 				</div>
