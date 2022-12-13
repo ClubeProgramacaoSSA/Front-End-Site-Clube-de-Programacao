@@ -61,10 +61,19 @@ export function Home() {
 						]}
 						animationSpeed={1000}
 					>
-						<img width="70%" src={DefaultIcon} />
-						<img width="70%" src={DefaultIcon} />
-						<img width="70%" src={DefaultIcon} />
-						<img width="70%" src={DefaultIcon} />
+
+						<img className="dot" src={"https://drive.google.com/uc?export=view&id=17mscIXTo5WaapnTOQPGZI2r1P7k9Kr51"} />
+						<img className="dot" src={"https://drive.google.com/uc?export=view&id=1jwsfW1s-4YSTOCoqj_sHA8SEGpQnFt-T"} />
+						<img className="dot" src={"https://drive.google.com/uc?export=view&id=14VD8zwwk5TdNHy-uU7GObFDGgqXu5QZF"} />
+						<img className="dot" src={"https://drive.google.com/uc?export=view&id=1P75mL_1uNMcQquvhlmYktQR1cjDCKqaQ"} />
+						<img className="dot" src={"https://drive.google.com/uc?export=view&id=1nI3KrQVdiYtQPMnxq1kRhv3EjM-MYjOZ"} />
+						<img className="dot" src={"https://drive.google.com/uc?export=view&id=1y2FCDNOobPoue7mFlPQPvqoBLZe1ELZ3"} />
+						<img className="dot" src={"https://drive.google.com/uc?export=view&id=12gZYpt51vfCuOEbnuP0c-ZpYBmki86X5"} />
+						<img className="dot" src={"https://drive.google.com/uc?export=view&id=1cypEMmBP7Ea5vwvEE6HEG1yICeTWQqEy"} />
+						<img className="dot" src={"https://drive.google.com/uc?export=view&id=1R6GWLISMvtSV0SZxFDB4ROOg_a0ExIMv"} />
+						<img className="dot" src={"https://drive.google.com/uc?export=view&id=1WvYnpJnXXzhZCLbaBpSYbMNrEkP5EMJv"} />
+
+						
 					</Carousel>
 				</div>
 				<img width="100%" src={Divider} alt='' />
@@ -72,9 +81,11 @@ export function Home() {
 					<h1 className='textApoio'>NOSSOS <span className='orangeText'>APOIADORES</span></h1>
 					<div className='apoioContainer'>
 						<img className='senai' src={LogoSenai} alt='' />
-						<img className='apoioCircle' src={DefaultIcon} alt='' />
-						<img className='apoioCircle' src={DefaultIcon} alt='' />
-						<img className='apoioCircle' src={DefaultIcon} alt='' />
+						<img className='apoioCircle' src={"https://drive.google.com/uc?export=view&id=1x3Vl-Cs47L2S2N-QMYKAEoxV2uEUiQGW"} alt='' />
+						<img className='apoioCircle' src={"https://drive.google.com/uc?export=view&id=19n4j_DKa4RdcjigkFKGLhS3etHPyHaYG"} alt='' />
+						<img className='apoioCircle' src={"https://drive.google.com/uc?export=view&id=1d-y4VL0osb0xKwTOQ78FvRAO7x_zDqSH"} alt='' />
+						<img className='apoioCircle' src={"https://drive.google.com/uc?export=view&id=1n19v2_O5BOYEufUPkk34V-Pz_AT8dcwt"} alt='' />
+
 					</div>
 				</div>
 				<div className='rodape'>

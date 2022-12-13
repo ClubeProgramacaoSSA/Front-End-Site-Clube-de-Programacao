@@ -29,6 +29,13 @@
     padding-bottom: 5%;
 }
 
+.dot {
+    width: 500px;
+    height: 400px;
+    border-radius: 60% !important; 
+    padding: 2.5em;
+}
+
 .apoio {
     padding-top: 5%;
     .textApoio {
@@ -54,8 +61,11 @@
         }
 
         .apoioCircle {
+          
+            padding: 3%;
             width: 15%;
-            padding-left: 3%;
+            border-radius: 60% !important; 
+            
         }
     }
 }
@@ -81,4 +91,7 @@
     img {
         z-index: 0;
     }
+
+    
+
 }
