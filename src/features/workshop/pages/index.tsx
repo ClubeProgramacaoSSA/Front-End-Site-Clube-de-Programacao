@@ -42,20 +42,19 @@ export function WorkShops() {
 
 	}, [data]);
 
-	if (data != undefined)
-		return (
-			<Layout navbar>
-				<main className="max-w-xs m-auto text-white flex flex-col items-center">
-					<h1 className="font-bold text-4xl mt-8">
-						Work<span className="text-orange">shops</span>
-					</h1>
-					<p className="font-medium text-center mt-10 text-xl">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam
-						asperiores nesciunt doloremque beatae ab adipisci quisquam, sed quae
-						temporibus
-					</p>
-					<WorkshopList workshops={data.workshops} />
-				</main>
-			</Layout>
-		);
+	return (
+		<Layout navbar>
+			<main className="max-w-xs m-auto text-white flex flex-col items-center">
+				<h1 className="font-bold text-4xl mt-8">
+					Work<span className="text-orange">shops</span>
+				</h1>
+				<p className="font-medium text-center mt-10 text-xl">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam
+					asperiores nesciunt doloremque beatae ab adipisci quisquam, sed quae
+					temporibus
+				</p>
+				<WorkshopList workshops={data.workshops} />
+			</main>
+		</Layout>
+	);
 }
