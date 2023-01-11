@@ -1,9 +1,15 @@
+import Languages from "./components/Languages";
 import Navbar from "./components/Navbar";
+import ProfileInfo from "./components/ProfileInfo";
+import TournamentHistory from "./components/TournamentHistory";
 
-export function PerfilPessoalAluno() {
+export default function PerfilPessoalAluno() {
     return (
         <div>
-            <Navbar></Navbar>
+            <Navbar />
+            <ProfileInfo />
+            <Languages />
+            <TournamentHistory />
         </div>
     );
 }

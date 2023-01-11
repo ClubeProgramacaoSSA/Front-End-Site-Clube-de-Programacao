@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import NavBar from "../components/Navbar";
 import { Home } from "../features/home";
+import PerfilPessoalAluno from "../features/perfilPessoalAluno";
 import { Projects } from "../features/projects/pages";
 import { Login } from "../features/system/pages/login";
 import { WorkShops } from "../features/workshop/pages";
@@ -12,6 +12,7 @@ export function AppRoutes() {
       <Route path="/projects" element={<Projects />} />
       <Route path="/workshops" element={<WorkShops />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/perfilPessoalAluno" element={<PerfilPessoalAluno />} />
     </Routes>
   );
 }
