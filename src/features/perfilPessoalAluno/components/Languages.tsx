@@ -5,7 +5,7 @@ import python from "../../../assets/png/Python.png"
 export default function Languages() {
     return (
         <div className="mt-[4rem] flex flex-col">
-            <p className="m-auto mb-[1.2rem] text-white text-lg">//suas linguagens</p>
+            <p className="m-auto mb-[1.2rem] text-white text-[1.4rem]">//suas linguagens</p>
             <div className="m-auto flex items-center justify-center rounded-xl mb-[2rem] h-[1.5rem] w-[8rem] bg-gradient-to-r from-purple to-orange">
                 <img src={cpp} className="w-[3rem]"></img>
             </div>
