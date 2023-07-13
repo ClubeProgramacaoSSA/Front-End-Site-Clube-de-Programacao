@@ -5,11 +5,13 @@ import Home from './pages/home';
 // import { Login } from './features/system/pages/login';
 import { createBrowserRouter } from 'react-router-dom';
 import Projects from './pages/projects';
+import ErrorPage from './pages/error';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />,
+    errorElement: <ErrorPage />,
   },
   {
     path: '/projects',

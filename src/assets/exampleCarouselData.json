@@ -1,7 +1,23 @@
 {
-  "id": 1,
-  "imageUrl": "/png/profilePicture.png",
-  "userName": "Fulano",
-  "userLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-  "imgAlt": "Rickroll"
+  "user1": {
+    "id": 1,
+    "imageUrl": "/png/profilePicture.png",
+    "userName": "Fulano",
+    "userLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "imgAlt": "Rickroll"
+  },
+  "user2": {
+    "id": 2,
+    "imageUrl": "/png/profilePicture.png",
+    "userName": "Fulano",
+    "userLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "imgAlt": "Rickroll"
+  },
+  "user3": {
+    "id": 3,
+    "imageUrl": "/png/profilePicture.png",
+    "userName": "Fulano",
+    "userLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "imgAlt": "Rickroll"
+  }
 }
