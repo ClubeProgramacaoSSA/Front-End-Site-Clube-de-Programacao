@@ -1,26 +1,27 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-interface CarouselItem {
+type CarouselItem = {
   id: number;
   imageUrl: string;
   userName: string;
   userLink: string;
   imgAlt: string;
-}
+};
 
-interface CarouselProps {
+type CarouselProps = {
   data: CarouselItem[];
-}
+};
 
-const Carousel: React.FC<CarouselProps> = ({ data }) => {
+//componente do carrossel da main (ainda WIP)
+const Carousel = ({ data }: CarouselProps) => {
   return (
     <>
-      <div>
+      <div className="flex gap-11 justify-center">
         {data.map((item) => (
           <div key={item.id}>
             <Link to={item.userLink}>
-              <img src={item.imageUrl} />
+              <img src={item.imageUrl} className="w-96" />
             </Link>
             <p>{item.userName}</p>
           </div>
