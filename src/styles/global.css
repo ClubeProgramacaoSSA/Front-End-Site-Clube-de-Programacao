@@ -3,6 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles global do projeto */
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif,
     'Barlow Semi Condensed';
