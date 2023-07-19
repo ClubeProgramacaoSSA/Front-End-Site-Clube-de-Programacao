@@ -17,7 +17,7 @@ function Home() {
   return (
     <>
       <NavBar />
-      <div className="font-barlow h-max flex flex-col z-0 gap-24">
+      <div className="font-barlow h-max flex flex-col z-0 gap-24 overflow-x-hidden">
         <header className="relative mt-48">
           <div className="absolute left-12 top-24 flex flex-col gap-8">
             <h1 className="font-bold text-9xl">
